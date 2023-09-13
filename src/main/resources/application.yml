@@ -41,11 +41,6 @@ springdoc:
   api-docs:
     path: /openapi
 
-cache:
-  tokens:
-    key-space: tokens
-    default-ttl: 60
-
 management:
   endpoints:
     web:

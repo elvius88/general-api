@@ -17,7 +17,6 @@ import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
-//@Import({ApiCommonApplication.class, ApiAuditApplication.class})
 @RefreshScope
 @EnableAspectJAutoProxy()
 @EnableAsync
