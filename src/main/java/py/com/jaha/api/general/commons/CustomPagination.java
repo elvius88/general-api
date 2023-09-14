@@ -24,7 +24,7 @@ public class CustomPagination {
   public static class Links {
     private String first;
     private String last;
-    private String previus;
+    private String previous;
     private String next;
 
   }
