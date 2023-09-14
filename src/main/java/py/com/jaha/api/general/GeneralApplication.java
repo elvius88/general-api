@@ -30,7 +30,7 @@ public class GeneralApplication {
             String hostAddress = InetAddress.getLocalHost().getHostAddress();
             System.setProperty(HOST_IP_NAME, hostAddress);
         } catch (Exception e) {
-            log.error("No se pudo obtener la ip para el hostIp attr");
+            log.error("Could not get IP for hostIp attribute");
         }
         SpringApplication.run(GeneralApplication.class, args);
     }
@@ -41,10 +41,9 @@ public class GeneralApplication {
         Locale.setDefault(Locale.forLanguageTag("es_PY"));
     }
 
-    //aca ya todos los beans estan cargados
     @EventListener(ApplicationReadyEvent.class)
     public void doAfterStartup() {
-        log.info("Ya se inicio el Api de Servicios Generales");
+        log.info("General API has already started");
     }
 
 }
